@@ -3,25 +3,57 @@ layout: default
 title: Metu Ceng Personal Blog Page
 ---
 
-    <div class="blurb">
-        <h2>Welcome to Metu-Ceng Blog Template</h2>
+<h2 id="about">Türkçe Programlama Dili Hakkında</h2>
 
-        <p>
-            This is a template page for blogging using Jekyll. Creating a static website using Jekyll is very easy and Github can host Jekyll pages. You can have more information at <a href = "http://jekyllrb.com">Jekyll web site</a>.        
-        </p> 
-        
-        <p>Before the start make sure that you have the latest version of jekyll. Run this code on terminal:</p>
-        
-    {% highlight bash %}
-  gem install jekyll{% endhighlight %}
+<h3 id="nedir">Nedir?</h3>
 
-        <p>
-            Please download the files at this <a href="https://github.com/mehmetakifakkus/blogTemplate">GitHub link</a>. This repository is a nice template to quick start and the page you are looking right now is from this template. Modify the file contents according to your need and see the website by running this:
-        </p>
-    
-    {% highlight bash %}
-  jekyll serve{% endhighlight %}
+<p>Yürütülen bu proje; bir programlama dili <strong>Türkçe olabilir mi</strong>, hiç bilmeyenlerin ya da deneyim sahibi olmayanların <strong>öğrenmesine katkı sağlayabilir mi</strong> gibi sorulara cevap aranması amacıyla her hangi ticari bir amaç gütmeden ortaya konmuştur. </p>
 
-        <p>Congrats! It is that easy. It starts up in just 3 minutes. Go to <a href="{{site.baseurl}}/blog/2016/11/07/uploading-website-to-github">blog</a> to learn how to publish it on the GitHub.</p>
 
-    </div> 
+<p>Amaç, evrensel bir dil geliştirmekten ziyade, öğretmede kullanıbilecek <strong>pratik bir dil</strong> olmasıdır.</p>
+
+<p>Sadece dil terimlerini Türkçe'leştirmeden ziyade onları <strong>görselleştirmeye</strong> çalışması ile programlamayı yeni öğrenenlere faydalı bir biçimde öğreteceği düşünülmektedir. Yazım dili olarak <strong>C/C++/Java ve Python</strong> dillerini benimsemesi bu dillere geçişi kolaylaştırması için amaçlanmıştır.</p>
+
+
+
+<p>Geliştirilmekte olan bu dille irtibatta kalmak veya katkıda bulunmak isterseniz aktif facebook sayfasını veya alakalı grubu <a href="https://www.facebook.com/turkceprogramlamadili">buradan</a> takip edebilirsiniz.</p>
+
+<h3 id="features">Dilin söz dizimsel özellikleri nedir?</h3>
+
+<p>Kullanılan dilin söz dizimi (syntax) özgün olarak üretilmiştir. Her programlama dilinde olduğu gibi esinlendiği bir kaç güncel programlama dili mevcuttur. Bunlar arasında Java/C++ dil ailesi ile Python dili olduğu söylenebilir. </p>
+
+<p>Kullanılan dilde; öncelikle alışılageldik dil öğelerinin kullanılmasına dikkat edilmiştir. Örneğin Java dil ailesinden bileşik komutların süslü prantezde yazılması alınmış, satır sonlarının noktalı virgülle bitme zorunluluğu olmaması yönüyle de python örnek alınmış denebilir. </p>
+
+<p>Programlama öğrenen kişinin programın çalışma mantığını anlamasına yardımcı olması hedeflenen dilin özelliklerinden bir kaçını şöyle maddeler halinde sayabiliriz:</p>
+
+<ol>
+ 	<li>Anlaması kolay (doğal konuşma diline yakın)</li>
+ 	<li>Sadece amaca özgü olacak kadar detaylı (gereksiz detayları olmayan)</li>
+ 	<li>Web üzerinde kodlanabilen ve çıktıları alınabilen/gözlemlenebilen</li>
+</ol>
+
+<p>Bu motivasyonla; öncelikle nasıl bir dil hedeflediğimizi daha kitabi bir şekilde anlatalım:</p>
+<ul>
+ 	<li>
+		<strong>Dinamik tipleme (dynamically typed):</strong> yani veri türü olmayan bir dil. Bu noktada Javascript ya da Python diline benzetildiği söyleyenebilir. Buradaki amaç, kulanıcıyı gereksiz detaylara boğmadan ve çalışma aşamasında performans kaygısı gütmeden temel programlama öğelerinin anlatmaya yönelik bir dil.</li>
+ 	<li>
+		<strong>Nesne yönelimli (object oriented): </strong>Güncel bir çok dilde standart halini almış olmasından ve karmaşık (complex) veri yapıları gibi kavramların kodlanabilmesi ve öğretilebilmesi adına nesne yapısı ve NYP (nesne yönelimli programlama) öemli bir hal almaktadır. Ayrıca;  bildiğini üzere veri yapılarındaki her bir eleman bir nesne olarak düşünülebilir. Örneğin bağlı listede (linked list) veya çizge (graph) üzerinde her bir eleman diğer elemanlarla etkileşim halindedir ve bazı fonksiyonları yerine getirirler. Bu nedenle veri yapılarının öğesi olan her bir eleman bir nesnedir desek çok da yanlış demiş olmayız.
+	</li>
+ 	<li>
+		<strong>Üst seviyeli (high level): </strong>buradaki amacımız ise kıyasla daha kolay öğrenildiği ve uygulandığı ve yeni başlayanların çabucak anlaması için en uygun dil paradigması olan üst seviye programlama dili model edilmiştir.
+	</li>
+</ul>
+
+<h3 id="technical">Dilin teknik özellikleri nedir?</h3>
+
+<p>Bilindiği üzere her bir programlama dili makinenin anlayabileceği makine dili üzerine soyutlamalar yaparak geliştirilir ve biraz daha detaylı bahsedersek; bu bir takım araçlar özel araçlar -<strong>söz dizim hatası</strong> (syntax error) için <strong>ayrıştırıcı</strong> (parser), bunları anlamlı hale getirip makineye (bilgisayar donanımına) ileten <strong>yorumlayıcı</strong> (interpreter) ya da <strong>derleyici</strong> (compiler)- kullanılarak yapılır. </p>
+
+<p>Bizim yukarıda bahsettiğimiz gereksinimlerin karşılanabilmesi için -web üzerinde kodlanabilen ve çıktıları alınabilen/gözlemlenebilen- bahsedilen araçların da web tarayıcının imkan verdiği Javascript dilinde yazılması icap etmektedir. Javascipt <strong>istemci</strong> (client) tarafında çalıştığından sunucu taraflı sistemlere göre daha <strong>çevik</strong> (dynamic) uygulamalar yapılması söz konusu olabilmektedir.</p>
+
+Bu projede ayrıştırıcı (parser) olarak Javascript tabanlı peg.js kütüphanesi kullanılmaktadır. Peg.js farklı dillerde yazılmış <a href="http://dinosaur.compilertools.net/yacc/">Yacc</a> (Yet Another Compiler Compiler), <a href="https://www.gnu.org/software/bison/Bison">Bison</a> ve <a href="http://www.antlr.org/">ANTLR</a> benzeri bir çeşit ayrıştırıcıdır. Sözü geçen bu ayrıştırıcılar ise sırasıyla C, C++ ve Java dillerinde yazılmıştır. Ayrıştırmadan sonra elde edilen parçaların mana kazanması, işlenmesi için ise javascript dili kullanımlamktadır.
+
+<h2 id="developer">Geliştirici ve Katkıda Bulunanlar</h2>
+
+Dilin aktif olarak 2 geliştiricisi bulunmaktadır, ama fikir verme anlamında bir çok kişi projenin elinden tutmuştur.
+
+
