@@ -39,13 +39,13 @@ Bu motivasyonla; öncelikle nasıl bir dil hedeflediğimizi daha kitabi bir şek
 
 ### Dilin teknik özellikleri nedir?
 
-Bilindiği üzere her bir programlama dili makinenin anlayabileceği makine dili üzerine soyutlamalar yaparak geliştirilir ve biraz daha detaylı bahsedersek; bu bir takım araçlar özel araçlar -<strong>söz dizim hatası</strong> (syntax error) için <strong>ayrıştırıcı</strong> (parser), bunları anlamlı hale getirip makineye (bilgisayar donanımına) ileten **yorumlayıcı** (interpreter) ya da **derleyici** (compiler)- kullanılarak yapılır. </p>
+Bilindiği üzere her bir programlama dili makinenin anlayabileceği makine dili üzerine soyutlamalar yaparak geliştirilir ve biraz daha detaylı bahsedersek; bu bir takım araçlar özel araçlar **söz dizim hatası** (syntax error) için **ayrıştırıcı** (parser), bunları anlamlı hale getirip makineye (bilgisayar donanımına) ileten **yorumlayıcı** (interpreter) ya da **derleyici** (compiler)- kullanılarak yapılır. </p>
 
-Bizim yukarıda bahsettiğimiz gereksinimlerin karşılanabilmesi için -web üzerinde kodlanabilen ve çıktıları alınabilen/gözlemlenebilen- bahsedilen araçların da web tarayıcının imkan verdiği Javascript dilinde yazılması icap etmektedir. Javascipt <strong>istemci</strong> (client) tarafında çalıştığından sunucu taraflı sistemlere göre daha **çevik** (dynamic) uygulamalar yapılması söz konusu olabilmektedir.
+Bizim yukarıda bahsettiğimiz gereksinimlerin karşılanabilmesi için -web üzerinde kodlanabilen ve çıktıları alınabilen/gözlemlenebilen- bahsedilen araçların da web tarayıcının imkan verdiği Javascript dilinde yazılması icap etmektedir. Javascipt **istemci** (client) tarafında çalıştığından sunucu taraflı sistemlere göre daha **çevik** (dynamic) uygulamalar yapılması söz konusu olabilmektedir.
 
 Bu projede ayrıştırıcı (parser) olarak Javascript tabanlı peg.js kütüphanesi kullanılmaktadır. Peg.js farklı dillerde yazılmış <a href="http://dinosaur.compilertools.net/yacc/">Yacc</a> (Yet Another Compiler Compiler), <a href="https://www.gnu.org/software/bison/Bison">Bison</a> ve <a href="http://www.antlr.org/">ANTLR</a> benzeri bir çeşit ayrıştırıcıdır. Sözü geçen bu ayrıştırıcılar ise sırasıyla C, C++ ve Java dillerinde yazılmıştır. Ayrıştırmadan sonra elde edilen parçaların mana kazanması, işlenmesi için ise javascript dili kullanımlamktadır.
 
-##Geliştirici ve Katkıda Bulunanlar
+## Geliştirici ve Katkıda Bulunanlar
 
 Dilin aktif olarak çeşitli kısımlarıyla ilgilenen 8 geliştiricisi bulunmaktadır, ama fikir verme anlamında bir çok kişi projenin elinden tutmuştur.
 
