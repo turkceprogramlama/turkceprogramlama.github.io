@@ -1,0 +1,8 @@
+name: Mehmet Akif AKKUS
+markdown: kramdown
+kramdown:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+permalink: /blog/:year/:month/:day/:title
+syntax_highlighter: rouge
+
+gems: [jekyll-coffeescript, jekyll-watch, jekyll-assets]
